@@ -12,6 +12,7 @@ class RedistestApplicationTests {
 
   @Test
   void contextLoads() {
+
     redisTemplate.opsForValue().set("myKey","myValue");
     System.out.println(redisTemplate.opsForValue().get("myKey"));
   }
